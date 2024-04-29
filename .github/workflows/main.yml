@@ -1,8 +1,9 @@
 name: Send Emails
 
 on:
-  schedule:
-    - cron: '3 22 29 4 *'
+  push
+  # schedule:
+  #   - cron: '3 22 29 4 *'
 
 jobs:
   send_emails:
