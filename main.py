@@ -3,10 +3,10 @@ import os
 import resend
 
 # Set the API key for the resend module
-resend.api_key = os.environ["RESEND_API_KEY"]
+api_key = os.getenv("RESEND_API_KEY")
 
-# Function to read HTML content from file
-
+# Set the API key for the resend module
+resend.api_key = api_key
 
 def read_html_file(html_file_path):
     with open(html_file_path, "r") as file:
