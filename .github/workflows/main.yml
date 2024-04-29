@@ -1,9 +1,9 @@
 name: Send Emails
 
 on:
-  push
-  # schedule:
-  #   - cron: '3 22 29 4 *'
+  # push
+  schedule:
+    - cron: '0 20 29 4 1'
 
 env:
   RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
